@@ -2,6 +2,7 @@ package org.kiworkshop.jdbctemplate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.kiworkshop.config.DataSourceConfig;
 import org.kiworkshop.config.JdbcTemplateConfig;
 import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
@@ -15,7 +16,7 @@ class MemberDaoJdbcTemplateImplTest {
 
     @BeforeEach
     void setUp() {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(JdbcTemplateConfig.class);
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(DataSourceConfig.class, JdbcTemplateConfig.class);
         memberDao = applicationContext.getBean("memberDao", MemberDao.class);
     }
 
