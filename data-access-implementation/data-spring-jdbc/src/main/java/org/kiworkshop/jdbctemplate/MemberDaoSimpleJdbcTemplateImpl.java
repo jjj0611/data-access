@@ -26,6 +26,12 @@ public class MemberDaoSimpleJdbcTemplateImpl implements MemberDao {
         simpleJdbcTemplate.update("INSERT INTO member (id, name, point) VALUES (:id, :name, :point)", source);
     }
 
+    public void insertAll(List<Member> members) {
+        for (Member member : members) {
+            insert(member);
+        }
+    }
+
     @Override
     public void update(Member member) {
         BeanPropertySqlParameterSource source = new BeanPropertySqlParameterSource(member);
