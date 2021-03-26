@@ -5,7 +5,7 @@ import org.kiworkshop.domain.Member;
 import java.util.List;
 
 public interface MemberDao {
-    Long insert(Member member);
+    void insert(Member member);
 
     void update(Member member);
 

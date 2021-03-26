@@ -10,14 +10,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MemberDaoJdbcTemplateImplTest {
-
+class MemberDaoSimpleJdbcTemplateImplTest {
     private MemberDao memberDao;
 
     @BeforeEach
     void setUp() {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(DataSourceConfig.class, JdbcTemplateConfig.class);
-        memberDao = applicationContext.getBean("memberDaoJdbcTemplateImpl", MemberDao.class);
+        memberDao = applicationContext.getBean("memberDaoSimpleJdbcTemplateImpl", MemberDao.class);
     }
 
     @Test

@@ -3,7 +3,7 @@ package org.kiworkshop.jdbctemplate;
 import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Component;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import java.util.List;
 
@@ -15,8 +15,7 @@ public class MemberDaoJdbcTemplateImpl implements MemberDao {
     }
 
     @Override
-    public Long insert(Member member) {
-        return null;
+    public void insert(Member member) {
     }
 
     @Override
