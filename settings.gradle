@@ -1,4 +1,4 @@
 rootProject.name = 'data-access'
 include 'data-model'
-include 'data-access-implementation'
+include 'data-access-implementation:data-spring-jdbc'
 
