@@ -9,4 +9,8 @@ public class Member {
     private Long id;
     private String name;
     private Double point;
+
+    public void changeName(String name) {
+        this.name = name;
+    }
 }

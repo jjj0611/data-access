@@ -2,21 +2,22 @@ package org.kiworkshop.jdbctemplate;
 
 import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 import javax.sql.DataSource;
 import java.util.List;
 
-public class MemberDaoJdbcTemplateImpl implements MemberDao {
-    private final JdbcTemplate jdbcTemplate;
+public class MemberDaoSimpleJdbcInsertImpl implements MemberDao {
 
-    public MemberDaoJdbcTemplateImpl(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    private final SimpleJdbcInsert simpleJdbcInsert;
+
+    public MemberDaoSimpleJdbcInsertImpl(DataSource dataSource) {
+        this.simpleJdbcInsert = new SimpleJdbcInsert(dataSource);
     }
 
     @Override
     public void insert(Member member) {
+
     }
 
     @Override
