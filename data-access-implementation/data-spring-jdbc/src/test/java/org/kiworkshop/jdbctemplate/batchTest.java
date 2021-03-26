@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.kiworkshop.config.DataSourceConfig;
 import org.kiworkshop.config.JdbcTemplateConfig;
-import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

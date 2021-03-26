@@ -3,7 +3,6 @@ package org.kiworkshop.jdbctemplate;
 import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import javax.sql.DataSource;
 import java.util.List;

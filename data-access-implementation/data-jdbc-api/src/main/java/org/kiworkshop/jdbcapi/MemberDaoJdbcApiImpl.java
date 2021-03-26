@@ -3,7 +3,6 @@ package org.kiworkshop.jdbcapi;
 import org.kiworkshop.dao.MemberDao;
 import org.kiworkshop.domain.Member;
 import org.springframework.jdbc.datasource.DataSourceUtils;
-import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

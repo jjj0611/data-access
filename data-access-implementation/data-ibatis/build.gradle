@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':data-model')
+    implementation project(':data-source')
+    implementation group: 'org.apache.ibatis', name: 'ibatis-sqlmap', version: '2.3.4.726'
+    implementation group: 'springframework', name: 'spring-orm', version: '1.2.6'
+}
